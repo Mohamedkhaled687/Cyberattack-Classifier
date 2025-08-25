@@ -1,4 +1,4 @@
-# ML Task NTI - Final Evaluation
+# CyberAttack-Classifier
 
 ## 🚀 Project Overview
 
