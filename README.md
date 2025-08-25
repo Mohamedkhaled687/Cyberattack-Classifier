@@ -2,29 +2,28 @@
 
 ## 🚀 Project Overview
 
-This repository contains the final evaluation project for the **Machine Learning Task at NTI (National Telecommunication Institute)**, focusing on **Cybersecurity Attack Classification** using the **UNSW-NB15 dataset**. The project demonstrates advanced machine learning techniques for network intrusion detection and security analysis.
+This repository contains the final evaluation project for the **Machine Learning Task at NTI (National Telecommunication Institute)**, focusing on **Binary Cybersecurity Attack Detection** using the **UNSW-NB15 dataset**. The project demonstrates machine learning techniques for network intrusion detection by classifying network traffic as either **attack** or **normal**.
 
 ## 🎯 Project Objectives
 
-- **Implement** a robust machine learning classifier for cyber attack detection
-- **Analyze** network traffic patterns to identify malicious activities
+- **Implement** a robust **binary classifier** for cyber attack detection
+- **Analyze** network traffic patterns to identify malicious vs legitimate activities
 - **Evaluate** model performance using comprehensive testing datasets
 - **Demonstrate** practical application of ML in cybersecurity domain
 
 ## 🔍 What This Project Does
 
-This project implements an **Intrusion Detection System (IDS)** that can:
-- **Classify** different types of cyber attacks (DoS, DDoS, Exploits, Reconnaissance, etc.)
-- **Analyze** network traffic in real-time
-- **Detect** anomalies and suspicious patterns
-- **Provide** security insights for network administrators
+This project implements a **Binary Intrusion Detection System (IDS)** that can:
+- **Classify** network traffic as either **ATTACK** or **NORMAL**
+- **Analyze** network traffic patterns in real-time
+- **Detect** the presence of malicious activities
+- **Provide** binary security alerts (attack detected or not)
 
 ## 📁 Project Structure
 
 ```
-├── app.py                 # Main ML application with attack classifier
-├── app copy.py           # Backup copy of the main application
-├── final_eval.ipynb      # Jupyter notebook with comprehensive analysis
+
+├── CyberAttackClassifier.ipynb      # Jupyter notebook with comprehensive analysis
 ├── UNSW_NB15_training-set.csv    # Training dataset (31MB)
 ├── UNSW_NB15_testing-set.csv     # Testing dataset (15MB)
 ├── .gitignore            # Git ignore rules
@@ -37,17 +36,17 @@ The **UNSW-NB15 dataset** is a comprehensive network traffic dataset specificall
 
 - **Source**: University of New South Wales
 - **Purpose**: Network security analysis and ML model training
-- **Features**: Multiple attack categories and normal traffic patterns
+- **Features**: Network traffic features for binary classification
 - **Applications**: IDS development, security research, academic studies
 
-### Dataset Categories:
-- **Normal Traffic**: Legitimate network communications
-- **Attack Types**: DoS, DDoS, Exploits, Reconnaissance, Generic, Shellcode, Worms
+### Binary Classification Categories:
+- **Normal Traffic**: Legitimate network communications (Class 0)
+- **Attack Traffic**: Any type of malicious network activity (Class 1)
 
 ## 🛠️ Technologies & Tools
 
 - **Programming Language**: Python 3.x
-- **Machine Learning**: Scikit-learn, TensorFlow/PyTorch
+- **Machine Learning**: Scikit-learn for binary classification
 - **Data Analysis**: Pandas, NumPy, Matplotlib
 - **Development**: Jupyter Notebook, VS Code
 - **Version Control**: Git & GitHub
@@ -62,8 +61,8 @@ The **UNSW-NB15 dataset** is a comprehensive network traffic dataset specificall
 ### Installation & Usage
 1. **Clone** this repository
    ```bash
-   git clone https://github.com/yourusername/ML-Task-NTI-Final-Evaluation.git
-   cd ML-Task-NTI-Final-Evaluation
+   git clone https://github.com/Mohamedkhaled687/Cyberattack-Classifier.git
+   cd Cyberattack-Classifier
    ```
 
 2. **Install** dependencies (if requirements.txt exists)
@@ -83,16 +82,16 @@ The **UNSW-NB15 dataset** is a comprehensive network traffic dataset specificall
 
 ## 📊 Key Features
 
-- **Multi-class Classification**: Detects various attack types
+- **Binary Classification**: Detects attack vs no attack
 - **Real-time Processing**: Handles network traffic streams
-- **Performance Metrics**: Accuracy, Precision, Recall, F1-Score
+- **Performance Metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC
 - **Visualization**: Charts and graphs for analysis
 - **Model Persistence**: Save and load trained models
 
 ## 🎓 Learning Outcomes
 
 This project demonstrates:
-- **Machine Learning** fundamentals in cybersecurity
+- **Binary Classification** fundamentals in cybersecurity
 - **Data Preprocessing** techniques for network data
 - **Feature Engineering** for security applications
 - **Model Evaluation** and performance optimization
@@ -121,25 +120,4 @@ This is an academic project for NTI evaluation. For educational purposes, feel f
 - **Improve** the algorithms
 - **Share** your findings
 
-## 📄 License
-
-This project is part of the **NTI ML Task Final Evaluation**. 
-**Educational Use Only** - Not for commercial distribution.
-
-## 👨‍💻 Author
-
-**Student at National Telecommunication Institute (NTI)**  
-**Course**: Machine Learning Task  
-**Project**: Final Evaluation  
-**Date**: 2024
-
-## 🙏 Acknowledgments
-
-- **NTI Faculty** for guidance and evaluation
-- **UNSW** for providing the NB15 dataset
-- **Open Source Community** for ML libraries and tools
-- **Academic Resources** for research and methodology
-
 ---
-
-⭐ **Star this repository if you find it helpful for your ML and cybersecurity studies!**
